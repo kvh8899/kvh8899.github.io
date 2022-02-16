@@ -1,0 +1,20 @@
+.content {
+  position: relative;
+  top: 200px;
+  width: 900px;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+.profile-img {
+  width: 400px;
+  height: 400px;
+  border-radius: 100%;
+  margin: 20px 50px;
+}
+.bott {
+  position: absolute;
+  top: 600px;
+  height: 100px;
+  width: 10px;
+}

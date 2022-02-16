@@ -1,13 +1,142 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  z-index: -80;
+  margin: 0px;
+  font-family: sans-serif;
+}
+#root {
+  position: relative;
+  z-index: -80;
+}
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.btnGreen {
+  background-color: #00ba94;
+  border-radius: 25px;
+  border: none;
+  color: white;
+  margin: 0px;
+  padding: 13px 27px;
+  font-size: 14px;
+  font-weight: bold;
+}
+.btnGreen:hover {
+  cursor: pointer;
+}
+
+.outer {
+  position: absolute;
+  height: 800px;
+  width: 200%;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.section {
+  position: relative;
+  width: 100%;
+  height: 800px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.background-purple {
+  background-image: linear-gradient(135deg, #0061f2, rgba(148, 74, 212, 1));
+}
+
+.background-white {
+  background-color: white;
+}
+.background-lightgray {
+  background-color: #eff3f9;
+}
+
+.position-after-1 {
+  position: relative;
+  top: -400px;
+  z-index: -1;
+}
+.position-after-2 {
+  position: relative;
+  top: -520px;
+  z-index: -2;
+}
+.position-after-3 {
+  position: relative;
+  top: -560px;
+  z-index: -3;
+}
+.topSection {
+  height: 100px;
+  width: 100%;
+}
+
+.projects > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.projectPreviewDark {
+  box-sizing: border-box;
+  position: relative;
+  height: 210px;
+  width: 300px;
+  object-fit: cover;
+  border-radius: 2px;
+  transition: 0.2s;
+  box-shadow: 0 0 rgb(43, 55, 168);
+}
+
+.projectPreviewDark:hover {
+  transform: translateX(7px) translateY(-7px);
+  box-shadow: -7px 7px 0px rgb(43, 55, 168), -6px 6px 0px rgb(43, 55, 168),
+    -5px 5px 0px rgb(43, 55, 168), -4px 4px 0px rgb(43, 55, 168),
+    -3px 3px 0px rgb(43, 55, 168), -2px 2px 0px rgb(43, 55, 168),
+    -1px 1px 0px rgb(43, 55, 168), 0px 0px 0px rgb(43, 55, 168);
+  transition: ease 0.2s;
+}
+.projectPreviewRed {
+  box-sizing: border-box;
+  position: relative;
+  height: 210px;
+  width: 300px;
+  object-fit: cover;
+  border-radius: 2px;
+  transition: 0.2s;
+  box-shadow: 0 0 orangered;
+}
+
+.projectPreviewRed:hover {
+  transform: translateX(7px) translateY(-7px);
+  box-shadow: -7px 7px 0px orangered, -6px 6px 0px orangered,
+    -5px 5px 0px orangered, -4px 4px 0px orangered, -3px 3px 0px orangered,
+    -2px 2px 0px orangered, -1px 1px 0px orangered, 0px 0px 0px orangered;
+  transition: ease 0.2s;
+}
+.projectPreviewBlack {
+  box-sizing: border-box;
+  position: relative;
+  height: 210px;
+  width: 300px;
+  object-fit: cover;
+  border-radius: 2px;
+  transition: 0.2s;
+  box-shadow: 0 0 black;
+}
+
+.projectPreviewBlack:hover {
+  transform: translateX(7px) translateY(-7px);
+  box-shadow: -7px 7px 0px black, -6px 6px 0px black, -5px 5px 0px black,
+    -4px 4px 0px black, -3px 3px 0px black, -2px 2px 0px black,
+    -1px 1px 0px black, 0px 0px 0px black;
+  transition: ease 0.2s;
 }
