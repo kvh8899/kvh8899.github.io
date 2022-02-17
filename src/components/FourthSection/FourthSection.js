@@ -6,7 +6,7 @@ function FourthSection() {
         <div className="outer background-white second">
           <div className="contentd">
             <h2>Skills</h2>
-            <div className="skill-gri">
+            <div className="skill-grid">
               <img
                 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
                 alt="JS"
