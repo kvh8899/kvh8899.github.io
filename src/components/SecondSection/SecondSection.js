@@ -11,12 +11,13 @@ function SecondSection() {
               developing websites with React.js, Redux, PostgreSQL, and Flask. I
               graduated from UCSD in 2021 where I studied Computer Science,
               Machine Learning, Product Design, and Neuroscience. Since then, I
-              have been learning new technologies, as well as working in some 
+              have been learning new technologies, as well as working in some
               agile teams to create some amazing applications.
             </p>
           </div>
         </div>
       </div>
+      <div id="projects"></div>
     </div>
   );
 }

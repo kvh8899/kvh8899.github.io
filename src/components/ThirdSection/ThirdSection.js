@@ -1,6 +1,7 @@
 import "./thirdsection.css";
-import zingPreview from "../../images/zing_preview.png";
-import seekerPreview from "../../images/seeker_preview.png";
+import Zing from "./Zing";
+import Seeker from "./Seeker";
+import Codex from "./Codex";
 function ThirdSection() {
   return (
     <div className="position-after-2 second">
@@ -11,34 +12,13 @@ function ThirdSection() {
             <h2>Projects</h2>
             <div className="projects">
               <div className="a">
-                <a href="https://app-zing.herokuapp.com/">
-                  <img
-                    src={zingPreview}
-                    alt="Zing"
-                    className="projectPreviewDark"
-                  ></img>
-                </a>
-                <h3>Zing - An Instant Messaging App</h3>
+                <Zing />
               </div>
               <div className="b">
-                <a href="https://gseeker-app.herokuapp.com/">
-                  <img
-                    src={seekerPreview}
-                    alt="Seeker"
-                    className="projectPreviewRed"
-                  ></img>
-                </a>
-                <h3>Seeker - A Forum for Video Games</h3>
+                <Seeker />
               </div>
               <div className="c">
-                <a href="https://codexappaa.herokuapp.com/">
-                  <img
-                    src="https://github.com/kvh8899/week13-project/raw/main/docs/images/screens-readme/homepage.png"
-                    alt="Codex"
-                    className="projectPreviewBlack"
-                  ></img>
-                </a>
-                <h3>Codex - Computer Science News and Articles</h3>
+                <Codex />
               </div>
             </div>
           </div>
